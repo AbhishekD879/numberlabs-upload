@@ -1,0 +1,129 @@
+
+
+.fileupload {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  padding: 1rem;
+  row-gap: .5rem;
+}
+.header {
+  width: 100%;
+  font-size: 24px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.spinner{
+    color: #3b82f6;
+    animation: spin 1s linear infinite;
+}
+.uploadArea {
+  position: relative;
+  width: 100%;
+  min-height: 200px;
+  border: 2px dashed #e2e8f0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: #F3F3F3;
+}
+
+.uploadArea:hover {
+  border-color: #94a3b8;
+}
+
+.dragging {
+  border-color: #3b82f6;
+  background: #eff6ff;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 24px;
+  text-align: center;
+}
+
+.fileInput {
+  display: none;
+}
+
+.uploadIcon {
+  width: 40px;
+  height: 40px;
+  color: #64748b;
+}
+
+.message {
+  font-size: 16px;
+  color: #475569;
+  margin: 8px 0;
+}
+
+.hint {
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+.progressContainer {
+  width: 100%;
+  min-width: 300px;
+}
+
+.progressBar {
+  height: 4px;
+  background: #3b82f6;
+  border-radius: 2px;
+  transition: width 0.2s ease;
+}
+
+.successIcon {
+  width: 40px;
+  height: 40px;
+  color: #22c55e;
+}
+
+.errorIcon {
+  width: 40px;
+  height: 40px;
+  color: #ef4444;
+}
+
+.uploading {
+  border-color: #3b82f6;
+}
+
+.success {
+  border-color: #22c55e;
+}
+
+.error {
+  border-color: #ef4444;
+}
+
+.status{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}

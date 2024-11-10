@@ -1,7 +1,5 @@
 "use client";
-import { Provider as StyletronProvider } from "styletron-react";
-import { LightTheme, BaseProvider } from "baseui";
-import { styletron } from "@/styletron";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -9,10 +7,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        <StyletronProvider value={styletron}>
-          <BaseProvider theme={LightTheme}>{children}</BaseProvider>
-        </StyletronProvider>
+      <body
+        style={{
+          backgroundColor: "#EAF6ED",
+          width: "100vw",
+          height: "100vh",
+          margin: 0,
+        }}
+      >
+        <div>{children}</div>
       </body>
     </html>
   );
