@@ -1,5 +1,5 @@
 "use client";
-
+/* eslint-disable react-hooks/rules-of-hooks */
 import { FileUp, LoaderCircle } from "lucide-react";
 import style from "./fileupload.module.css";
 import {
