@@ -1,0 +1,74 @@
+.container {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 388px;
+    background-color: #F3F3F3;
+    padding: 1rem;
+    max-height: 350px;
+    overflow-y: scroll;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .title {
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+  
+  .status {
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+  }
+  
+  .statusProcessing {
+    background-color: #fef3c7;
+    color: #92400e;
+  }
+  
+  .statusComplete {
+    background-color: #dcfce7;
+    color: #166534;
+  }
+  
+  .fileItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .fileName {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .fileStatus {
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+  }
+  
+  .statusPending {
+    color: #ca8a04;
+  }
+  
+  .statusSuccess {
+    color: #16a34a;
+  }
+  
+  .statusFailed {
+    color: #dc2626;
+  }

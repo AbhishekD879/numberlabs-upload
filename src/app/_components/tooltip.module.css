@@ -1,0 +1,37 @@
+.tooltipContainer{
+    position: relative;
+    display: grid;
+
+}
+
+.tooltipContent{
+    width: 120px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: -250%;
+    left: 50%;
+    margin-left: -60px;
+}
+.list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: start;
+    padding: .5rem;
+}
+.fileItem{
+    display: flex;
+    align-items: center;
+    column-gap: .2rem;
+    justify-content: space-between;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
